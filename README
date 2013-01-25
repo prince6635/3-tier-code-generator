@@ -1,0 +1,9 @@
+Recently, i'm working on the project to generate 3 tier code automatically, so i don't have to write the same kind of codes every time when i want to use 3 tier structure for my project.
+
+It includes:
+Model Layer: Model\XXX.cs
+Data Access Layer: DAL\XXXDAL.cs (plus SqlHelper.cs)
+Business Logic Layer: BLL\XXXBLL.cs
+The main functions should be AddNew, Update, Delete, Get, ListAll...
+
+Note: If you want to add your own logic, i recommend to create a new class, like PersonDALExt.cs, and use  "public partial class PersonDAL { }", so every time your database has been changed, you can keep those code written by yourself and just run this code generator again!
